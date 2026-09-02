@@ -66,9 +66,9 @@ description: 超云PPT设计：将文章、讲稿、Markdown、TXT、DOCX 或可
 
 1. 用户提供的参考 PPT 或图片
 2. 用户明确指定的视觉方向
-3. [中文风格目录](references/style-catalog.md)中的风格
+3. [中文风格目录](references/style-catalog.md)中的风格；需要查看真实案例时，读取对应编号的 [PPT 预览图](assets/ppt-previews/)
 
-中文风格目录来自用户指定的[飞书多维表格](https://xcn5phmhnu1z.feishu.cn/base/JvecbWMEwaLv8as3NGXcQxjgnn9?table=tbl1DwIeLHneaDRX&view=vew2lCosPH)，它是风格名称、描述、场景和完整提示词的唯一权威来源。不得再从旧英文或日文案例库提取风格名称、描述或提示词。
+中文风格目录来自用户指定的[飞书多维表格](https://xcn5phmhnu1z.feishu.cn/base/JvecbWMEwaLv8as3NGXcQxjgnn9?table=tbl1DwIeLHneaDRX&view=vew2lCosPH)，它是风格名称、描述、场景和完整提示词的唯一权威来源。`assets/ppt-previews/` 保存与目录编号一一对应的 207 张案例预览图，用于理解真实视觉效果；预览图不能覆盖表格中的文字定义。不得再从旧英文或日文案例库提取风格名称、描述或提示词。
 
 用户没有锁定唯一参考时，提出 2—3 个差异明显且适合原文的中文风格方向。用同一张有代表性的内容页分别生成样张，再对比语气、配色、图像语言、信息密度适配度和风险。每个方向单独出图，避免风格互相污染。
 
