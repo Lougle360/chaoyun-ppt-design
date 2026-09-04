@@ -1,4 +1,4 @@
 interface:
   display_name: "超云PPT设计"
   short_description: "把文章转换成信息完整、风格统一的整页文生图PPT"
-  default_prompt: "使用 $chaoyun-ppt-design 把这篇文章制作成信息完整、风格统一的整页文生图PPT。"
+  default_prompt: "使用 $chaoyun-ppt-design 以飞书多维表格中的模板信息为准，优先匹配内容结构、页面组织方式、素材承载方式并核对判断依据，结合主要场景、具体场景、标签和正文容量检索全库，再把这篇文章制作成信息完整、风格统一的整页文生图PPT。"
