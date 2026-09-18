@@ -1,0 +1,19 @@
+{
+  "name": "chaoyun-ppt-design",
+  "version": "1.0.0",
+  "description": "一个面向 Codex 的中文 Skill：把文章、讲稿、Markdown、TXT、DOCX 或可提取文字的 PDF，转换成高信息密度、风格统一的整页文生图 PPTX。",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "sharp": "^0.35.4"
+  }
+}
