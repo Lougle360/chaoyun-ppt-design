@@ -40,6 +40,18 @@ git clone https://github.com/Lougle360/chaoyun-ppt-design.git ~/.codex/skills/ch
 
 选定风格编号不代表确认发布文案，也不代表授权批量付费；已确认内容不重复询问。发现错误先暂停后续付费调用，再按已授权范围修复。
 
+## 本地全风格图鉴
+
+仓库随附 [超云 PPT 全风格图鉴](style-gallery/README.md)，包含全部 207 种风格的预览图、中文介绍、场景筛选、搜索、收藏、完整提示词和使用指令。
+
+当用户询问“有哪些风格”“查看全部模板”或“打开风格库”时，Skill 会启动并自动打开本地图鉴，而不是发送飞书介绍页面。手动启动：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File style-gallery/start-gallery.ps1 -NoOpen
+```
+
+默认网址为 `http://127.0.0.1:8880/style-gallery/`；页面只监听本机地址，不上传收藏，也不调用付费服务。
+
 ## 运行依赖
 
 - 支持 Codex Skill 的运行环境
@@ -60,6 +72,7 @@ chaoyun-ppt-design/
 ├── assets/ppt-previews/
 ├── references/
 ├── scripts/
+├── style-gallery/
 └── tests/
 ```
 
@@ -79,7 +92,7 @@ chaoyun-ppt-design/
 
 ## 如何选择 PPT 风格
 
-- 客户自选：打开 [全部 PPT 风格预览](https://xcn5phmhnu1z.feishu.cn/share/base/view/shrcnveXqYYHOnI8tcUJqkOckxc)，选好后提供编号即可。
+- 客户自选：自动打开仓库随附的本地全风格图鉴，选好后提供编号即可。
 - 助手推荐：提供文章，由助手检索全库并推荐 2—3 个匹配的风格。
 
 选定编号后使用对应模板；发布文案确认与付费生成授权仍按商业发布流程执行。

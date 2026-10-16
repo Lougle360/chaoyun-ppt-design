@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141c">
+  <meta name="description" content="超云 PPT 全部 207 种风格：真实预览、中文介绍、适用场景与完整提示词。">
+  <title>超云 PPT · 全风格图鉴</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d7f99b'/%3E%3Cpath d='M18 20h28v24H18zM24 26h16v12H24z' fill='%2310141c' fill-rule='evenodd'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="app.css">
+  <script src="styles-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">跳到风格目录</a>
+  <header class="topbar shell">
+    <a class="brand" href="#" aria-label="超云 PPT 首页"><span class="brand-icon" aria-hidden="true">云</span><span>超云 <b>PPT</b><small>STYLE ATLAS / 风格图鉴</small></span></a>
+    <nav aria-label="主导航"><a class="nav-current" href="#catalog">探索风格</a><button id="saved-top" class="nav-button" aria-pressed="false">我的收藏 <span id="saved-count">0</span></button><a class="source-link" href="https://github.com/Lougle360/chaoyun-ppt-design" target="_blank" rel="noopener noreferrer">Skill 仓库 ↗</a></nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span></span> CHAOYUN · PRESENTATION STYLES</p><h1 id="hero-title">让内容，找到<br><em>合适的表达。</em></h1><p class="hero-description">从理性的商业图解，到有温度的东方水墨。<br>看见每一种风格，再选出属于你这次表达的那一种。</p><div class="hero-meta"><span><strong id="total-count">207</strong> 种完整风格</span><i></i><span><strong>8</strong> 类主要场景</span><i></i><span>中文介绍 · 原图预览</span></div></div>
+      <div class="hero-art" aria-label="多种视觉风格示例"><div class="art-note"><span class="dot"></span> ONE IDEA, MANY EXPRESSIONS</div><div class="art-card art-a"><img id="hero-a" alt="现代编辑拼贴风格示例"><span>01 / 编辑拼贴</span></div><div class="art-card art-b"><img id="hero-b" alt="商业咨询信息图风格示例"><span>02 / 咨询信息图</span></div><div class="art-card art-c"><img id="hero-c" alt="新中式国潮风格示例"><span>09 / 东方表达</span></div><span class="art-star" aria-hidden="true">✳</span><div class="art-caption">一套风格，不止一种可能 <span>↗</span></div></div>
+    </section>
+
+    <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+      <div class="section-title"><div><p class="eyebrow">THE COLLECTION</p><h2 id="catalog-title">探索全部风格<span> / <b id="catalog-total">207</b></span></h2></div><p>先看场景，再看风格。点击卡片展开完整介绍。</p></div>
+      <div class="filter-panel">
+        <div class="search-row"><label class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.7" cy="10.7" r="6.7"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="搜索风格、编号、关键词，例如：水墨 / 006 / 知识地图" aria-label="搜索风格" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><button id="saved-toggle" class="outline-button" aria-pressed="false"><span aria-hidden="true">♡</span> 只看收藏</button></div>
+        <div id="scene-filters" class="scene-filters" role="group" aria-label="按主要使用场景筛选"></div>
+        <div class="secondary-filters"><label>视觉类别<select id="category" aria-label="视觉类别"><option value="">全部类别</option></select></label><label>正文容量<select id="capacity" aria-label="正文容量"><option value="">全部容量</option></select></label><button id="reset" class="text-button" hidden>清除筛选 ↺</button><span class="filter-hint">场景是选型线索，不是用途限制</span></div>
+      </div>
+      <div class="results-bar"><p id="result-summary" role="status" aria-live="polite"></p><label class="sort-label">排列方式<select id="sort" aria-label="排列方式"><option value="id">按风格编号</option><option value="name">按中文名称</option></select></label></div>
+      <div id="gallery" class="gallery"></div>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3 id="empty-title">没有找到匹配的风格</h3><p id="empty-description">试试更短的关键词，或放宽场景、类别与容量条件。</p><button id="empty-reset" class="primary-button">查看全部风格</button></div>
+      <nav id="pagination" class="pagination" aria-label="风格目录分页"></nav>
+    </section>
+
+    <section class="how-to" aria-labelledby="how-title"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="how-title">看中一款，然后开始。</h2></div><ol><li><span>01</span><div><b>找到视觉方向</b><p>用场景与关键词缩小范围，打开原图看细节。</p></div></li><li><span>02</span><div><b>核对表达方式</b><p>查看内容结构和正文容量，判断是否适合你的材料。</p></div></li><li><span>03</span><div><b>复制使用指令</b><p>把指令连同文章交给 Codex，进入 PPT 制作流程。</p></div></li></ol></section>
+    <footer><div><b>超云 PPT · 全风格图鉴</b><p>内容来自本地 chaoyun-ppt-design 风格目录，共 207 种。展示的是随附示例，并非你的内容生成后的成品。</p><p>名称与介绍以目录为准，个别原图中的文字或旧名称可能不同；场景、容量标签是选型建议。</p></div><a href="https://github.com/Lougle360/chaoyun-ppt-design" target="_blank" rel="noopener noreferrer">查看 Skill 仓库 ↗</a></footer>
+  </main>
+
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="detail-shell"><button id="close-detail" class="icon-button dialog-close" aria-label="关闭详情">×</button><div class="detail-visual"><a id="original-link" target="_blank" rel="noopener noreferrer" aria-label="查看完整原图"><img id="detail-image" alt=""></a><div class="image-toolbar"><span>随附风格示例 · 点击图片查看原图</span><a id="original-text-link" target="_blank" rel="noopener noreferrer">查看原图 ↗</a></div></div><div class="detail-content"><p id="detail-kicker" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-description" class="detail-description"></p><div id="detail-tags" class="tags"></div><dl id="detail-facts" class="detail-facts"></dl><details class="prompt-section"><summary>完整风格提示词 <span>展开 ↓</span></summary><pre id="detail-prompt"></pre><button id="copy-prompt" class="outline-button">复制完整提示词</button></details><details class="evidence-section"><summary>查看选型依据与适用边界</summary><p id="detail-evidence"></p></details><div class="detail-actions"><button id="copy-instruction" class="primary-button">复制使用指令 ↗</button><button id="save-detail" class="outline-button" aria-pressed="false">♡ 收藏风格</button></div><div class="detail-nav"><button id="previous-detail" class="text-button">← 上一个</button><span id="detail-position"></span><button id="next-detail" class="text-button">下一个 →</button></div></div></div></dialog>
+  <dialog id="copy-dialog" aria-labelledby="copy-title"><div class="copy-shell"><h2 id="copy-title">复制内容</h2><p>浏览器未开放自动复制，请选中下方文字手动复制。</p><textarea id="copy-fallback" readonly aria-label="待复制内容"></textarea><button id="close-copy" class="primary-button">完成</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="shell">请启用 JavaScript 以浏览完整风格目录。</p></noscript>
+</body>
+</html>
